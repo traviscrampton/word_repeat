@@ -9,6 +9,5 @@ end
 
 get('/word_repeat') do
   @wordrepeat=params.fetch('word_repeat').word_repeat(params.fetch('part'))
-
   erb(:word_repeat)
 end
