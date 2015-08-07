@@ -1,6 +1,6 @@
 class String
-  define_method(:word_repeat) do
+  define_method(:word_repeat) do |find|
     separate = self.split()
-    separate
+    separate.include?(find)
   end
 end
