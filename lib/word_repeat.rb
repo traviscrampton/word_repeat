@@ -1,12 +1,12 @@
 class String
   define_method(:word_repeat) do
     words = self.split()
-    words
     counts = Hash.new 0
       words.each do |word|
         counts[word] += 1
       end
-      counts
+      get_it = counts.fetch("loves")
+      get_it
     end
   end
 
@@ -16,3 +16,4 @@ class String
   #    words.each do |word|
   #      counts[word] += 1
   #    end
+  #    counts.fetch("loves")
