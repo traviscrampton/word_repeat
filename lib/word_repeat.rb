@@ -5,6 +5,10 @@ class String
       words.each do |word|
         counts[word] += 1
       end
-      get_it = counts.fetch(part)
+      if words.include?(part)
+        counts.fetch(part)
+      else
+        "That word isn't in the text"
+      end
     end
   end

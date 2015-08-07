@@ -14,4 +14,7 @@ require('word_repeat')
     it('takes an argument to fetch') do
       expect(("travis loves loves programming").word_repeat("loves")).to(eq(2))
    end
+    it('has a respond message if the word isnt in the text') do
+      expect(("travis loves loves programming").word_repeat("jeff")).to(eq("That word isn't in the text"))
+ end
  end
