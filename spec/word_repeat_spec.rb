@@ -8,7 +8,10 @@ require('word_repeat')
   #  it('keeps track of how many times a word is listed in the array') do
   #    expect(("travis loves loves programming").word_repeat()).to(eq({"travis"=>1, "loves"=>2, "programming"=>1}))
   #   end
-    it('fetches from the hash') do
-      expect(("travis loves loves programming").word_repeat()).to(eq(2))
-  end
-end
+  #  it('fetches from the hash') do
+  #    expect(("travis loves loves programming").word_repeat()).to(eq(2))
+  #end
+    it('takes an argument to fetch') do
+      expect(("travis loves loves programming").word_repeat("loves")).to(eq(2))
+   end
+ end
